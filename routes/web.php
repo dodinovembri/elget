@@ -20,3 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/youtube', [App\Http\Controllers\YoutubeController::class, 'index'])->name('index');
+Route::get('/youtube/create', [App\Http\Controllers\YoutubeController::class, 'create'])->name('create');
+Route::post('/youtube/store', [App\Http\Controllers\YoutubeController::class, 'store'])->name('store');
