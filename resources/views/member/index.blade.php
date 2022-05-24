@@ -30,7 +30,6 @@
     <div class="content-body">
 
         <div class="component-section">
-            <a href="{{ url('youtube/create') }}"><button type="button" class="btn btn-primary mb-2">Add New Subscribe</button></a>
             <table id="example1" class="table">
                 <thead>
                     <tr>
@@ -42,7 +41,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php $no = 0; foreach ($yt_subs_transactions as $key => $value) { $no++; ?>
+                    <?php $no = 0; foreach ($users as $key => $value) { $no++; ?>
                         <tr>
                             <td>{{ $no }}</td>
                             <td>{{ $value->yt_link }}</td>

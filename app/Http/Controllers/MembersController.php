@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\YtSubsTransactionModel;
+use App\Models\User;
 
-class YoutubeController extends Controller
+class MembersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class YoutubeController extends Controller
      */
     public function index()
     {
-        $data['yt_subs_transactions'] = YtSubsTransactionModel::get();
-        return view('youtube.index', $data);
+        $data['users'] = User::get();
+        return view('member.index', $data);
     }
 
     /**
