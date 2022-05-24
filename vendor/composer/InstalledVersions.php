@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '3287418ab0da81dc9a991273236a30e95d22d8c7',
+    'reference' => '84de99e340f007b05ea2c77a29bae746ebb32bd3',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -413,6 +413,15 @@ private static $installed = array (
         0 => '*',
       ),
     ),
+    'ladumor/laravel-pwa' => 
+    array (
+      'pretty_version' => 'v0.0.3',
+      'version' => '0.0.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8256db4b88554e69d8c0691ea8880efe29845411',
+    ),
     'laravel/framework' => 
     array (
       'pretty_version' => 'v9.10.0',
@@ -429,7 +438,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '3287418ab0da81dc9a991273236a30e95d22d8c7',
+      'reference' => '84de99e340f007b05ea2c77a29bae746ebb32bd3',
     ),
     'laravel/sail' => 
     array (

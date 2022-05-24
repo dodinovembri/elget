@@ -27,10 +27,24 @@
     <!-- template css -->
     <link rel="stylesheet" href="{{ asset('assets/css/cassie.css') }}">
 
+    <!-- PWA  -->
+    <meta name="theme-color" content="#6777ef"/>
+    <link rel="apple-touch-icon" href="{{ asset('assets/img/favicon.png') }}">
+    <link rel="manifest" href="{{ asset('/manifest.json') }}">
+
   </head>
   <body data-spy="scroll" data-target="#navSection" data-offset="100">
 
     @yield('content')
+
+    <script src="{{ asset('/sw.js') }}"></script>
+    <script>
+        if (!navigator.serviceWorker.controller) {
+            navigator.serviceWorker.register("/sw.js").then(function (reg) {
+                console.log("Service worker has been registered for scope: " + reg.scope);
+            });
+        }
+    </script>
     
     <script src="{{ asset('lib/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
